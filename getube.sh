@@ -2,14 +2,13 @@
 # Nome: getube.sh
 # Autor: Gustavo S. de Lima
 # Email: ghtp25@gmail.com
+# Descrição: auxilia no download de video do youtube
 # Dependências: Zenity, Youtube-dl
 
 # Variável autor
 Autor="Gustavo Soares de Lima"
-
 # Variável para título
 Titulo="Getube"
-
 # Variavel contendo versão
 Versao="0.1"
 
