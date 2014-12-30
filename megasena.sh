@@ -49,7 +49,9 @@ echo "Digite a data do sorteio. Exemplo: 24/12/2014"
 read data
 
 echo "Os números são:"
-cat D_MEGA.HTM | grep -E -a -A 6 '[0-9]{2}/[0-9]{2}/[0-9]{4}' | sed 's/<td>// ; s/<\/td>// ; s/--//' | grep -E '[0-9]{2}' | sed 's/.*>//' | grep -A 6 $data
+cat D_MEGA.HTM | grep -E -a -A 6 '[0-9]{2}/[0-9]{2}/[0-9]{4}' \
+| sed 's/<td>// ; s/<\/td>// ; s/--//' \
+| grep -E '[0-9]{2}' | sed 's/.*>//' | grep -A 6 $data
 
 }
 
@@ -58,7 +60,10 @@ funcao_sorteio_por_mes () {
 echo "Digite o mês por número decimal, exemplo 04 para abril"
 read mes
 
-cat D_MEGA.HTM | grep -E -a -A 6 '[0-9]{2}/[0-9]{2}/[0-9]{4}' | sed 's/<td>// ; s/<\/td>// ; s/--//' | grep -E '[0-9]{2}' | sed 's/.*>//' | grep -E -A 6 '[0-9]{2}\/'$mes'\/[0-9]{4}'
+cat D_MEGA.HTM | grep -E -a -A 6 '[0-9]{2}/[0-9]{2}/[0-9]{4}' \
+| sed 's/<td>// ; s/<\/td>// ; s/--//' \
+| grep -E '[0-9]{2}' | sed 's/.*>//' \
+| grep -E -A 6 '[0-9]{2}\/'$mes'\/[0-9]{4}'
 
 }
 
