@@ -1,6 +1,4 @@
 #!/bin/bash
-# Autor: Gustavo S. de Lima
-# Email: ghtp25@gmail.com
 # Descrição: captura ip privado e mostra ao usuário
 
 # Função de captura de IP privado
