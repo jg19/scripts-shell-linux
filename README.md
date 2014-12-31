@@ -12,6 +12,9 @@ Os scripts estão dividos em três pastas:
 - Básicos
 - Intermediários
 - Avançados
+- Dialog
+- Zenity
+- Yad
 
 
 Contribuição
