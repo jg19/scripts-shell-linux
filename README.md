@@ -19,4 +19,4 @@ Lista de scripts
 
 - saudacao > mostra bom dia, boa tarde ou boa noite de acordo com o horário
 
-- sorteio > sorteio simples para demonstrar uso de redicionamento
+- sorteio > sorteio simples para demonstrar uso de redirecionamento
