@@ -1,7 +1,7 @@
-Curso-shell-linux
+Scripts-shell-linux
 =================
 
-Scripts feitos em Shell no Linux com objetivos didáticos.
+Alguns scripts feitos em Shell no Linux com objetivos de aprendizado.
 
 
 Lista de scripts
