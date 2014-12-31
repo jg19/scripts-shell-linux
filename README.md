@@ -20,3 +20,9 @@ Lista de scripts
 - saudacao > mostra bom dia, boa tarde ou boa noite de acordo com o horário
 
 - sorteio > sorteio simples para demonstrar uso de redirecionamento
+
+
+Contribuição
+============
+
+Se deseja contribuir com algum dos códigos fique a vontade. Será bem-vindo!
