@@ -2,6 +2,8 @@
 # Autor: Gustavo S. de Lima
 # Email: ghtp@gmail.com
 # Descrição: Gera lista dos números que já caíram na megasena de forma ordenada
+# OBS: Estou trabalhando nesse script para quem sabe ele possa compor um
+# programa chamado "Funções ZZ"
 
 Ajuda="
 Opções:
