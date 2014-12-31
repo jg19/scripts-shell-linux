@@ -7,7 +7,7 @@ Alguns scripts feitos em Shell no Linux com objetivos de aprendizado.
 Organização
 ================
 
-Os scripts estão dividos em três pastas:
+Os scripts estão dividos em seis pastas:
 
 - Básicos
 - Intermediários
