@@ -18,3 +18,11 @@ Contribuição
 ============
 
 Se deseja contribuir com algum dos códigos fique a vontade. Será bem-vindo!
+
+
+Autor
+=====
+
+Gustavo Soares de Lima
+
+Email: ghtp25@gmail.com
