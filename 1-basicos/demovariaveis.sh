@@ -11,3 +11,12 @@ echo "E o status do comando anterior foi $?"
 
 # Neste script vimos
 # - Uso das variáveis especiais
+
+# Para reforçar
+# =============
+# $0 fornece o nome do script
+# $$ mostra o pid aberto
+# $# fornece o total de argumentos fornecidos
+# $* mostra todos os argumentos
+# $1, $2, $3... mostra o argumento de acordo com a ordem
+# $? fornece o statuso do comando anterior

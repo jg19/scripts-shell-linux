@@ -5,6 +5,7 @@
 echo "Digite um número:"
 # Guarda o número em uma variável
 read numero
+# Testa a saída da variável
 if [ $numero != 0 ]; then
 echo "Esse número não é zero"
 else
