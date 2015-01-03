@@ -22,7 +22,7 @@ Instalando
 
 Para baixar os scripts faça:
 
-$ git clone https://github.com/ghtp25/scripts-shell-linux
+	$ git clone https://github.com/ghtp25/scripts-shell-linux
 
 
 Contribuição
