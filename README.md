@@ -17,6 +17,14 @@ Os scripts estão dividos em seis pastas:
 - Yad
 
 
+Instalando
+==========
+
+Para baixar os scripts faça:
+
+git clone https://github.com/ghtp25/scripts-shell-linux
+
+
 Contribuição
 ============
 
