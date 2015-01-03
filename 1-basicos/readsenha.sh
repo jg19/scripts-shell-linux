@@ -1,9 +1,9 @@
 #!/bin/bash
 # Descrição: exemplo read escondendo resposta
 
-echo "Bem vindo ao Banco da Jamaica"
-echo "Qual seu nome?"
-read nome
-echo "Qual sua senha?"
+echo "Digite a senha:"
 read -s senha
-echo "Olá $nome, você acessou com a senha $senha"
+echo "A senha digitada foi: $senha"
+
+# Neste script podemos ver:
+# - Uso do read com opção "-s" para captura silenciosa
