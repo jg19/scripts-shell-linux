@@ -1,3 +1,7 @@
+# Exemplos de comandos no Linux
+# Lista organizada por Gustavo S. de Lima
+# Email: ghtp25@gmail.com
+
 alias	# Obtém uma lista dos aliases criados
 alias apelido='comando'	# Cria um apelido para o comando especificado
 arp	# Mostra armazenamento arp
