@@ -1,0 +1,87 @@
+alias	# Obtém uma lista dos aliases criados
+alias apelido='comando'	# Cria um apelido para o comando especificado
+arp	# Mostra armazenamento arp
+bash	# Abre um novo shell bash
+bash -x script.sh	# Executa o script mostrando parte do código fonte
+blkid	# Mostra atributos de partições como UUID e tipo
+cat /etc/passwd | cut -d ":" -f1,7 | grep -v bash	# Mostra na tela lista de usuários que não usam bash
+cat /etc/passwd | tr ":" "\t"	# Mostra lista de usuário trocando delimitar padrão por tabulação
+cat /proc/cpuinfo	# Para ver modelo da CPU
+cat /proc/devices	# Para ver dispositivos configurados
+cat /proc/meminfo	# Para obter informações sobre memória
+cat arquivo	# Mostra na tela o conteúdo do arquivo
+cat arquivo > arquivo2	# Envia para arquivo2 o conteúdo de arquivo
+cat arquivo | tr a-z A-Z	# Troca todas as letras de a a z do arquivo para maiúsculas
+cd diretório	# Navega entre os diretórios
+chkconfig --list	# Mostra serviços de acordo com runlevel
+chmod a+rwx /diretorio	# Permite acesso irrestrito de todos os usuários ao diretório indicado
+cut -d ":" -f1,6 < /etc/passwd	# Mostra usuários e suas pastas
+dd if=/dev/mem bs=1k skip=768 count=256 2>/dev/null | strings -n 8	# Para realizar uma leitura da BIOS
+dd if=/dev/sda1 of=/imagem.iso	# Cria uma imagem da partição sda1
+df -k	# Mostra uso de espaço de disco
+dhclient eth0	# Solicita ip para interface eth0
+dmesg	# Mostra o hardware detectado e também mensagens da inicialização
+dmidecode	# Mostra DMI/SMBIO
+echo $PATH | tr ":" "\012"	# Mostra na tela conteúdo da variável $PATH colocando um diretório em cada linha
+ethtool eth0	# Permite ver o estado da ethernet
+expr 10 + 10	# Soma 10 + 10
+expr 2 \* 9	# Multiplica 2 por 9
+expr substr "diga meu nome logicus" 15 7	# A partir da posição indicada mostra o número de caracteres indicados, neste caso mostrará apenas "logicus"
+fdisk -l	# Lista partições existentes no sistema
+file arquivo	# Determina o tipo de arquivo indicado
+find /bin -type f -follow | xargs ls -al | tr -s ' ' | cut -f3 -d ' ' | sort -u	# Lista donos de arquivos (inclusive links) no /bin e subdiretórios
+find /etc -name '*.conf' | xargs ls -l | less	# Lista arquivos .conf do diretório /etc com paginação
+gpg -c arquivo	# Para encriptar um arquivo com frase secreta
+gpg arquivo.gpg	# Para descriptografar um arquivo
+grep MemTotal /proc/meminfo	# Para ver o total de memória física
+history	# Lista os últimos comandos dados no terminal
+hostname	# Mostra nome da máquina
+hostname -I	# Mostra todos os ips da máquina
+htop	# Mostra de forma atualizada várias informações relativas a processamento
+ifconfig	# Mostra na tela configurações de interface de rede
+ifconfig eth0 promisc	# Coloca interface de rede eth0 em modo promíscuo
+ip link show	# Mostra as interfaces de rede
+iptables -A INPUT -p tcp --dport 22 -i eth0 -j DROP	# Proibe o acesso externo via ssh na porta 22 na interface eth0
+iptables -A OUTPUT -p tcp --dport 80 -j REJECT	# Proibe a navegação web
+iptables -L -n -v	# Mostra o status do Firewall
+iwlist wlan0 scan	# Lista redes disponíveis em wlan0
+iwlist wlan0 scan | grep ESSID	# Mostra apenas os nomes ESSID das redes disponíveis em wlan0
+last reboot	# Mostra o histórico de reinicialização do sistema
+ldd programa	# Mostra lista de dependências dinâmicas
+ln -s /etc/init.d /home/$USER/init	# Cria link simbólico na pasta home do usuário para o diretório init.d que contém os scripts de inicialização
+ls	# Lista arquivos e diretórios a partir do local em que o usuário se encontra
+ls --color	# Colore a saída do ls
+ls -a	# Não ignora arquivos e diretórios ocultos
+lsb_release -a	# Mostra informações da distribuição
+lsdev	# Mostra informações sobre a instalação do hardware
+lsmod	# Mostra status dos módulos carregados pelo kernel
+lsof -i	# Lista as conexões de internet
+lsof -i tcp -n	# Lista conexões baseadas em tcp
+lsof /home	# Mostra os processos que estão acessando o /home
+lspci	# Mostra informações dos dispositivos pci
+man -h	# Exibe ajuda do man
+mount | column -t	# Mostra os sitemas de arquivos montados
+netstat -le --inet	# Lista portas que estão sendo ouvidas
+ps -auxefw	# Lista de forma extensiva processos em execução
+pstree	# Mostra os processos em forma de árvore
+pwd	# Informa o diretório absoluto corrente
+route -n	# Apresenta rota padrão
+runlevel	# Mostra o runlevel atual
+seq 10	# Apresenta uma sequência de números de 1 até 10
+socklist	# Mostra sockets abertos
+sudo su	# Troca de usuário comum para super usuário em distros como Ubuntu. A senha será solicitada
+sysctl -a | more	# Mostra todos os parâmetros de configuração do kernel pausadamente para leitura
+sysctl -w net.ipv4.icmp_echo_ignore_all=1	# Proibe ping
+sysctl fs.file-max	# Permite visualizar o limite máximo de arquivos abertos
+tail -f /var/log/messages	# Mostra últimas linhas do log messages continuamente
+tar cf backup.tar /home	# Cria um arquivo chamado backup.tar contendo o que estiver na pasta /home
+top	# Mostra de forma atualizada processos da CPU
+tr '[:lower:]' '[:upper:]' < arquivo	# Troca as letras minúsculas de um arquivo para letras maiúsculas na tela
+tr a-z A-Z < arquivo	# Troca as letras minúsculas de um arquivo para letras maiúsculas na tela
+traceroute google.com.br	# Mostra o caminho pelo qual pacotes levam até chegar no host indicado, neste caso o google.com.br
+tree	# Exibe arquivos e diretórios
+uname --all	# Mostra várias informações do sistema (kernel, release, etc), o mesmo que -a
+uname -a	# Mostra várias informações do sistema (kernel, release, etc), o mesmo que --all
+uname -o	# Mostra o sistema operacional
+uptime	# Mostra a quanto tempo o sistema está ligado
+who | cut -f1 -d " " | sort | uniq -d	# Mostra logins duplicados independente da quantidade de usuários
