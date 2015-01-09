@@ -24,6 +24,10 @@ Para baixar os scripts faça:
 
 	$ git clone https://github.com/ghtp25/scripts-shell-linux
 
+Para tornar um script executável faça:
+
+	$ chmod +x script.sh
+
 
 Contribuição
 ============
