@@ -1,7 +1,7 @@
 #!/bin/bash
 # Nome: calcapost.sh
 # Calculadora de apostilas da Logicus
-# Dependência: unzip, pdftk, dateutils
+# Dependências: unzip, pdftk, dateutils
 # Autor: Gustavo S. de Lima
 # Email: ghtp25@gmail.com
 
