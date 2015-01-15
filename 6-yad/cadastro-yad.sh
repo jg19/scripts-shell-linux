@@ -2,6 +2,9 @@
 # Exemplo de cadastro feito com Yad
 # Autor: Gustavo Soares de Lima
 
+# Destaque para a simplicidade com que o 
+# Yad trabalha com formulários
+
 yad --title "Formulário de Cadastro feito em Shell" \
 --width=400 \
 --form --field "Nome:" --field "Digite uma senha:":H \
