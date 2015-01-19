@@ -83,7 +83,7 @@ funcao_media () {
 	done < NumeroDePaginasEscritas.txt
 		
 	HOJE=`date '+%Y-%m-%d'`
-	INTERVALO=`dateutils.ddiff 2013-01-31 $HOJE`
+	INTERVALO=`ddiff 2013-01-31 $HOJE`
 
 	MEDIA=$((($TOTAL/$INTERVALO)))
 
