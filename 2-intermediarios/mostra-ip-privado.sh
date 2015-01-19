@@ -4,7 +4,8 @@
 # Função de captura de IP privado
 EnderecoIP ()
 {
-	IP+=($( compgen -W "$( PATH="$PATH:/sbin" LC_ALL=C ifconfig -a | sed -ne 's/.*addr:\([^[:space:]]*\).*/\1/p' \
+	IP+=($( compgen -W "$( PATH="$PATH:/sbin" LC_ALL=C ifconfig -a | \
+	sed -ne 's/.*addr:\([^[:space:]]*\).*/\1/p' \
 	-ne 's/.*inet[[:space:]]\{1,\}\([^[:space:]]*\).*/\1/p' )" -- "$cur" ))
 }
 

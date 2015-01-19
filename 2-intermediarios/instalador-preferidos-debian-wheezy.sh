@@ -1,13 +1,17 @@
 #!/bin/bash
 # Nome: debianotimize.sh
 # Descrição: organiza o repositório e instala
-# programas preferidos no Debian Wheezy
+# programas preferidos no Debian Wheezy.
+# Lembre-se que este foram os programas que eu escolhi,
+# sendo assim, você pode comentar as linhas que deseja descartar
 
 # Organizando repositórios
 Repositorio="/etc/apt/sources.list"
 #echo "deb http://ftp.br.debian.org/debian wheezy main contrib non-free" > $Repositorio
 #echo "deb http://ftp.debian.org/debian/ wheezy-updates main contrib non-free" >> $Repositorio
 #echo "deb http://security.debian.org/ wheezy/updates main contrib non-free" >> $Repositorio
+
+# Variáveis complementares
 Atualiza="apt-get update -y && apt-get upgrade -y && apt-get -f install"
 Instala="apt-get install -y"
 
