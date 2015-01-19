@@ -15,6 +15,8 @@ Os scripts estão dividos em seis pastas:
 - Dialog
 - Zenity
 - Yad
+- Kdialog
+- CGI
 
 
 Instalando
