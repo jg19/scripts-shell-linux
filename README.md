@@ -30,6 +30,10 @@ Para tornar um script executável faça:
 
 	$ chmod +x script.sh
 
+Para tornar os scripts executáveis sem precisar chamar o cominho faça no diretório "scripts-shell-linux":
+
+	$ PATH=$PATH:
+
 
 Contribuição
 ============
