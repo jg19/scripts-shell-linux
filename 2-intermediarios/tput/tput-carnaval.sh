@@ -6,7 +6,7 @@ do
 		do
 		tput setaf $corletra; 
 		tput setab $corfundo; 
-		echo -ne " ** Carnaval Logicus 2015, a gente vai se no Shell ** "; 	
+		echo -ne " ** Carnaval Logicus 2015, a gente vai se vê no Shell ** "; 	
 		tput sgr0; 
 	done; 
 done
