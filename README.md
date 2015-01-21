@@ -17,6 +17,7 @@ Os scripts estão dividos em seis pastas:
 - Yad
 - Kdialog
 - CGI
+- Regex
 
 
 Instalando
