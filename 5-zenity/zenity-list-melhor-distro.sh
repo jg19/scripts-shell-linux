@@ -12,4 +12,5 @@ distros=$(zenity --list \
 	"Red Hat" \
 	"Ubuntu" \
 	"LFS")
-	echo $distros
+
+echo $distros
